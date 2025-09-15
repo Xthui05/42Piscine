@@ -1,0 +1,29 @@
+#include <unistd.h>
+
+char *ft_strcpy(char *dest, char *src)
+{
+    int i;
+
+    i = 0;
+    while (src[i] != '\0')
+    {
+        dest[i] = src[i];
+        write(1, &dest[i], 1);
+        i++;
+    }
+    dest[i]='\0';
+    write(1, "\n", 1);
+    return (dest);
+}
+
+/*int main(void)
+{
+    char    *s;
+    char    *d;
+
+    d = malloc(sizeof(s));
+    s = "Hello World!";
+    *ft_strcpy(d, s);
+    free(d);
+    return(0);
+}*/
