@@ -1,55 +1,59 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: txiao-hu <txiao-hu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/14 21:24:13 by marvin            #+#    #+#             */
-/*   Updated: 2025/09/16 14:25:42 by txiao-hu         ###   ########.fr       */
+/*   Created: 2025/09/16 13:40:10 by txiao-hu          #+#    #+#             */
+/*   Updated: 2025/09/16 14:25:02 by txiao-hu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putnbr(int n)
+int	ft_str_is_numeric(char *str)
+{
+	int	i;
+
+	i = 0;
+	if (str[i] == '\0')
+	{
+		return (1);
+	}
+	while (str[i] != '\0')
+	{
+		if (!((str[i] >= '0') && (str[i] <= '9')))
+		{
+			return (0);
+		}
+		i++;
+	}
+	return (1);
+}
+
+void	ft_ptrnbr(int n)
 {
 	char	c;
 
-	if (n < 0)
-	{
-		write(1, "-", 1);
-		n = -n;
-	}
 	if (n >= 10)
 	{
-		ft_putnbr(n / 10);
+		ft_ptrnbr(n / 10);
 	}
 	c = (n % 10) + '0';
 	write(1, &c, 1);
 }
 
-void	ft_ultimate_ft(int *********nbr)
+/*int	main(int argc, char *argv[])
 {
-	*********nbr = 42;
-	ft_putnbr(*********nbr);
-}
+	int	result;
 
-/*int main(void)
-{
-	int value;
-	int *i = &value;
-	int **i1 = &i;
-	int ***i2 = &i1;
-	int ****i3 = &i2;
-	int *****i4 = &i3;
-	int ******i5 = &i4;
-	int *******i6 = &i5;
-	int ********i7 = &i6;
-	int *********i8 = &i7;
-
-	ft_ultimate_ft(i8);
+	if (argc != 2)
+	{
+		return (1);
+	}
+	result = ft_str_is_numeric(argv[1]);
+	ft_ptrnbr(result);
 	write(1, "\n", 1);
-
 	return (0);
 }*/
