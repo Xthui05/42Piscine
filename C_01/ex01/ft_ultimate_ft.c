@@ -6,13 +6,13 @@
 /*   By: txiao-hu <txiao-hu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 21:24:13 by marvin            #+#    #+#             */
-/*   Updated: 2025/09/16 14:25:42 by txiao-hu         ###   ########.fr       */
+/*   Updated: 2025/09/17 10:57:10 by txiao-hu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putnbr(int n)
+/*void	ft_putnbr(int n)
 {
 	char	c;
 
@@ -27,13 +27,13 @@ void	ft_putnbr(int n)
 	}
 	c = (n % 10) + '0';
 	write(1, &c, 1);
-}
+}*/
 
 void	ft_ultimate_ft(int *********nbr)
 {
 	*********nbr = 42;
-	ft_putnbr(*********nbr);
 }
+//ft_putnbr(*********nbr);
 
 /*int main(void)
 {

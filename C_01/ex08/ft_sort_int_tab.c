@@ -6,13 +6,13 @@
 /*   By: txiao-hu <txiao-hu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/15 15:03:32 by marvin            #+#    #+#             */
-/*   Updated: 2025/09/16 14:27:04 by txiao-hu         ###   ########.fr       */
+/*   Updated: 2025/09/16 18:12:35 by txiao-hu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_ptrnbr(int n)
+/*void	ft_ptrnbr(int n)
 {
 	char	c;
 
@@ -48,7 +48,7 @@ void	ft_ptrarr(int *tab, int size)
 		}
 		i++;
 	}
-}
+}*/
 
 void	ft_sort_int_tab(int *tab, int size)
 {

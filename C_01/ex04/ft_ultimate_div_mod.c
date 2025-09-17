@@ -6,13 +6,13 @@
 /*   By: txiao-hu <txiao-hu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 21:36:41 by marvin            #+#    #+#             */
-/*   Updated: 2025/09/16 14:26:30 by txiao-hu         ###   ########.fr       */
+/*   Updated: 2025/09/17 10:58:22 by txiao-hu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_ptrnbr(int n)
+/*void	ft_ptrnbr(int n)
 {
 	char	c;
 
@@ -27,7 +27,7 @@ void	ft_ptrnbr(int n)
 	}
 	c = (n % 10) + '0';
 	write(1, &c, 1);
-}
+}*/
 
 void	ft_ultimate_div_mod(int *a, int *b)
 {
@@ -38,12 +38,12 @@ void	ft_ultimate_div_mod(int *a, int *b)
 	mod = (*a % *b);
 	*a = div;
 	*b = mod;
-	write(1, "div: ", 5);
-	ft_ptrnbr(*a);
-	write(1, " | ", 3);
-	write(1, "mod: ", 5);
-	ft_ptrnbr(*b);
 }
+	//write(1, "a: ", 3);
+	//ft_ptrnbr(*a);
+	//write(1, " | ", 3);
+	//write(1, "b: ", 3);
+	//ft_ptrnbr(*b);
 
 /*int main(void)
 {

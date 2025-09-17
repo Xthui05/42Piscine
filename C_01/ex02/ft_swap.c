@@ -6,13 +6,13 @@
 /*   By: txiao-hu <txiao-hu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 20:51:39 by marvin            #+#    #+#             */
-/*   Updated: 2025/09/16 14:25:56 by txiao-hu         ###   ########.fr       */
+/*   Updated: 2025/09/16 17:16:18 by txiao-hu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putnbr(int n)
+/*void	ft_putnbr(int n)
 {
 	char	c;
 
@@ -27,14 +27,15 @@ void	ft_putnbr(int n)
 	}
 	c = (n % 10) + '0';
 	write(1, &c, 1);
-}
+}*/
 
-void	ft_putchar(int a, int b)
+/*void	ft_putchar(int a, int b)
 {
+	write(1, "a: ", 3);
 	ft_putnbr(a);
-	write(1, " ", 1);
+	write(1, " b: ", 4);
 	ft_putnbr(b);
-}
+}*/
 
 void	ft_swap(int *a, int *b)
 {
